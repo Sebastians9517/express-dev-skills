@@ -4,7 +4,7 @@ const skillsCtrl = require('../controllers/skills')
 
 /* GET users listing. */
 router.get('/', skillsCtrl.index);
-router.get('/')
+router.get('/new', skillsCtrl.new);
 
 
 module.exports = router;
