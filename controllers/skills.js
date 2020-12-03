@@ -11,7 +11,7 @@ module.exports = {
 }
 
 function index(req, res) {
-    res.render('skills', {skills: Skill.getAll()})
+    res.render('skills', {skills: Skill.getAll(), time: req.time})
 }
 
 function newSkill(req, res) {
